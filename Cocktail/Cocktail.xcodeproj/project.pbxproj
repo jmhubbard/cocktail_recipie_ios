@@ -21,6 +21,22 @@
 		2790592A258738DD00C9372A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 279058FA258738DD00C9372A /* Assets.xcassets */; };
 		2790593F2587396800C9372A /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2790593E2587396800C9372A /* recipes.json */; };
 		279059402587396800C9372A /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 2790593E2587396800C9372A /* recipes.json */; };
+		2790594725873B0000C9372A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790594625873B0000C9372A /* Ingredient.swift */; };
+		2790594825873B0000C9372A /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790594625873B0000C9372A /* Ingredient.swift */; };
+		279059522587413700C9372A /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059512587413700C9372A /* RecipeList.swift */; };
+		279059532587413700C9372A /* RecipeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059512587413700C9372A /* RecipeList.swift */; };
+		279059622587455D00C9372A /* DesignTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059612587455D00C9372A /* DesignTime.swift */; };
+		279059632587455D00C9372A /* DesignTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059612587455D00C9372A /* DesignTime.swift */; };
+		27905969258745E500C9372A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27905968258745E500C9372A /* Recipe.swift */; };
+		2790596A258745E500C9372A /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27905968258745E500C9372A /* Recipe.swift */; };
+		2790597D25874ACE00C9372A /* RecipeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790597C25874ACE00C9372A /* RecipeListRow.swift */; };
+		2790597E25874ACE00C9372A /* RecipeListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790597C25874ACE00C9372A /* RecipeListRow.swift */; };
+		2790599C2587510A00C9372A /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790599B2587510A00C9372A /* RemoteImage.swift */; };
+		2790599D2587510A00C9372A /* RemoteImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2790599B2587510A00C9372A /* RemoteImage.swift */; };
+		279059A32587565500C9372A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059A22587565500C9372A /* ImageLoader.swift */; };
+		279059A42587565500C9372A /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059A22587565500C9372A /* ImageLoader.swift */; };
+		279059B225875E3E00C9372A /* RecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059B125875E3E00C9372A /* RecipeLoader.swift */; };
+		279059B325875E3E00C9372A /* RecipeLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279059B125875E3E00C9372A /* RecipeLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +74,14 @@
 		2790591E258738DD00C9372A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		27905920258738DD00C9372A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2790593E2587396800C9372A /* recipes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		2790594625873B0000C9372A /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		279059512587413700C9372A /* RecipeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeList.swift; sourceTree = "<group>"; };
+		279059612587455D00C9372A /* DesignTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignTime.swift; sourceTree = "<group>"; };
+		27905968258745E500C9372A /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		2790597C25874ACE00C9372A /* RecipeListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListRow.swift; sourceTree = "<group>"; };
+		2790599B2587510A00C9372A /* RemoteImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteImage.swift; sourceTree = "<group>"; };
+		279059A22587565500C9372A /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		279059B125875E3E00C9372A /* RecipeLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +122,7 @@
 				279058F4258738DD00C9372A /* Shared */,
 				27905901258738DD00C9372A /* iOS */,
 				27905908258738DD00C9372A /* macOS */,
+				27905958258744CC00C9372A /* DesignTime */,
 				27905912258738DD00C9372A /* Tests iOS */,
 				2790591D258738DD00C9372A /* Tests macOS */,
 				27905900258738DD00C9372A /* Products */,
@@ -107,13 +132,11 @@
 		279058F4258738DD00C9372A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				2790594525873AE100C9372A /* Model */,
-				2790593D2587393200C9372A /* Resources */,
 				279058F7258738DD00C9372A /* CocktailApp.swift */,
-				279058F8258738DD00C9372A /* ContentView.swift */,
-				279058F9258738DD00C9372A /* Persistence.swift */,
-				279058FA258738DD00C9372A /* Assets.xcassets */,
-				279058F5258738DD00C9372A /* Cocktail.xcdatamodeld */,
+				27905973258749A900C9372A /* View */,
+				2790594525873AE100C9372A /* Model */,
+				279059832587503A00C9372A /* Services */,
+				2790593D2587393200C9372A /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -167,6 +190,7 @@
 		2790593D2587393200C9372A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				279058FA258738DD00C9372A /* Assets.xcassets */,
 				2790593E2587396800C9372A /* recipes.json */,
 			);
 			path = Resources;
@@ -175,8 +199,48 @@
 		2790594525873AE100C9372A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				279058F5258738DD00C9372A /* Cocktail.xcdatamodeld */,
+				279058F9258738DD00C9372A /* Persistence.swift */,
+				2790594625873B0000C9372A /* Ingredient.swift */,
+				27905968258745E500C9372A /* Recipe.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		27905958258744CC00C9372A /* DesignTime */ = {
+			isa = PBXGroup;
+			children = (
+				279059612587455D00C9372A /* DesignTime.swift */,
+			);
+			path = DesignTime;
+			sourceTree = "<group>";
+		};
+		27905973258749A900C9372A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2790599A258750E700C9372A /* components */,
+				279058F8258738DD00C9372A /* ContentView.swift */,
+				279059512587413700C9372A /* RecipeList.swift */,
+				2790597C25874ACE00C9372A /* RecipeListRow.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		279059832587503A00C9372A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				279059A22587565500C9372A /* ImageLoader.swift */,
+				279059B125875E3E00C9372A /* RecipeLoader.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2790599A258750E700C9372A /* components */ = {
+			isa = PBXGroup;
+			children = (
+				2790599B2587510A00C9372A /* RemoteImage.swift */,
+			);
+			path = components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,9 +402,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2790594725873B0000C9372A /* Ingredient.swift in Sources */,
+				2790597D25874ACE00C9372A /* RecipeListRow.swift in Sources */,
+				279059522587413700C9372A /* RecipeList.swift in Sources */,
+				2790599C2587510A00C9372A /* RemoteImage.swift in Sources */,
 				27905921258738DD00C9372A /* Cocktail.xcdatamodeld in Sources */,
+				279059A32587565500C9372A /* ImageLoader.swift in Sources */,
 				27905927258738DD00C9372A /* Persistence.swift in Sources */,
+				279059622587455D00C9372A /* DesignTime.swift in Sources */,
+				279059B225875E3E00C9372A /* RecipeLoader.swift in Sources */,
 				27905923258738DD00C9372A /* CocktailApp.swift in Sources */,
+				27905969258745E500C9372A /* Recipe.swift in Sources */,
 				27905925258738DD00C9372A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -349,9 +421,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2790594825873B0000C9372A /* Ingredient.swift in Sources */,
+				2790597E25874ACE00C9372A /* RecipeListRow.swift in Sources */,
+				279059532587413700C9372A /* RecipeList.swift in Sources */,
+				2790599D2587510A00C9372A /* RemoteImage.swift in Sources */,
 				27905922258738DD00C9372A /* Cocktail.xcdatamodeld in Sources */,
+				279059A42587565500C9372A /* ImageLoader.swift in Sources */,
 				27905928258738DD00C9372A /* Persistence.swift in Sources */,
+				279059632587455D00C9372A /* DesignTime.swift in Sources */,
+				279059B325875E3E00C9372A /* RecipeLoader.swift in Sources */,
 				27905924258738DD00C9372A /* CocktailApp.swift in Sources */,
+				2790596A258745E500C9372A /* Recipe.swift in Sources */,
 				27905926258738DD00C9372A /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,44 +5,36 @@
 //  Created by Michael Thornton on 12/14/20.
 //
 
+import Combine
 import SwiftUI
 
 struct ContentView: View {
 
+    @State
     private var recipes: [Recipe] = []
 
-    private func fetchRecipes() -> [Recipe] {
-        guard
-            let path = Bundle.main.path(forResource: "recipes", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe),
-            let jsonResult = try? JSONDecoder().decode([Recipe].self, from: data)
-        else { return [] }
-        return jsonResult
-    }
+    @ObservedObject
+    private var recipeLoader: RecipeLoader
 
-    init() {
-        self.recipes = fetchRecipes()
 
+    init(for request: RecipeLoader.RecipeRequest = .all) {
+        self.recipeLoader = RecipeLoader(for: request)
     }
 
 
     var body: some View {
-        RecipeList(recipes: self.recipes)
-            .navigationTitle("Recipe Count: \(recipes.count)")
+        NavigationView {
+            RecipeList(recipes: self.recipes)
+        }
+        .onReceive(recipeLoader.didChange) { recipes in
+            self.recipes = recipes
+        }
+
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        NavigationView {
-            ContentView()
-        }
+        ContentView(for: .byFirstCharacter("q"))
     }
 }
