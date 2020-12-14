@@ -107,6 +107,7 @@
 		279058F4258738DD00C9372A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				2790594525873AE100C9372A /* Model */,
 				2790593D2587393200C9372A /* Resources */,
 				279058F7258738DD00C9372A /* CocktailApp.swift */,
 				279058F8258738DD00C9372A /* ContentView.swift */,
@@ -169,6 +170,13 @@
 				2790593E2587396800C9372A /* recipes.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		2790594525873AE100C9372A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
